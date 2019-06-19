@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+	<div>
+		<button onclick='decrease()'>-</button>
+		<input type="text" placeholder='1' id='uname'>
+		<button onclick='plus()'>+</button>
+	</div>
+	<script>
+		function decrease(){
+			var uname=document.getElementById('uname');
+			if ((Number(uname.placeholder))>1)
+			{
+				str=Number(uname.placeholder)-1;
+				uname.placeholder=str.toString();
+			}
+		}
+		function plus(){
+			var uname=document.getElementById('uname');
+				str=Number(uname.placeholder)+1;
+				uname.placeholder=str.toString();
+		}
+	</script>
+  
+ </body>
+</html>
